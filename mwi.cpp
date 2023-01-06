@@ -47,7 +47,7 @@ class mithos_wayfire_integration : public wf::plugin_interface_t
 					anchored_area_left->reflowed = 0;
 					output->workspace->add_reserved_area(anchored_area_left.get());
 					anchored_area_left->edge = wf::workspace_manager::ANCHORED_EDGE_LEFT;
-					anchored_area_left->reserved_size = 5;
+					anchored_area_left->reserved_size = 70; //implement setting for hiding dock then size=5
 					anchored_area_left->real_size = 100;
 					
 					output->workspace->reflow_reserved_areas();
